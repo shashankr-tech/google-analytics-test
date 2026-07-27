@@ -1,48 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Analytics Test Website</title>
-    <link rel="stylesheet" href="style.css">
 
-    <!-- Google Analytics code goes here -->
-    <!-- Replace G-XXXXXXXXXX with your Measurement ID -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google Analytics -->
+    <!-- Replace G-XXXXXXXXXX with your actual Measurement ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-XXXXXXXXXX');
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-XXXXXXXXXX');
     </script>
+
 </head>
 
 <body>
 
-<header>
-    <h1>My Analytics Test Website</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header>
+        <h1>My Analytics Test Website</h1>
 
-<section>
-    <h2>Welcome!</h2>
-    <p>This website is created to test Google Analytics tracking.</p>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
 
-    <button onclick="trackButtonClick()">
-        Click Me
-    </button>
 
-    <p id="message"></p>
-</section>
+    <section>
 
-<footer>
-    <p>Analytics Testing Project</p>
-</footer>
+        <h2>Welcome!</h2>
 
-<script src="script.js"></script>
+        <p>
+            This website is created to test Google Analytics tracking.
+        </p>
+
+
+        <button onclick="trackButtonClick()">
+            Click Me
+        </button>
+
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <footer>
+        <p>Analytics Testing Project</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
