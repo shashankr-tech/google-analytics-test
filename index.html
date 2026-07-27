@@ -7,11 +7,10 @@
 
     <title>Analytics Test Website</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Google Analytics -->
-    <!-- Replace G-XXXXXXXXXX with your actual Measurement ID -->
+    <!-- Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 
     <script>
@@ -28,45 +27,43 @@
 
 </head>
 
+
 <body>
 
-    <header>
-        <h1>My Analytics Test Website</h1>
+<header>
+    <h1>My Analytics Test Website</h1>
 
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
-        </nav>
-    </header>
-
-
-    <section>
-
-        <h2>Welcome!</h2>
-
-        <p>
-            This website is created to test Google Analytics tracking.
-        </p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
 
-        <button onclick="trackButtonClick()">
-            Click Me
-        </button>
+<section class="container">
+
+    <h2>Welcome!</h2>
+
+    <p>
+        This website is created to test Google Analytics tracking.
+    </p>
+
+    <button onclick="trackButtonClick()">
+        Click Me
+    </button>
+
+    <p id="message"></p>
+
+</section>
 
 
-        <p id="message"></p>
-
-    </section>
-
-
-    <footer>
-        <p>Analytics Testing Project</p>
-    </footer>
+<footer>
+    <p>Analytics Testing Project</p>
+</footer>
 
 
-    <!-- JavaScript -->
-    <script src="./script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
